@@ -1,0 +1,30 @@
+<section id="videos" class="section video-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-pill">{{ 'videos.eyebrow' | translate }}</p>
+      <h2>{{ 'videos.title' | translate }}</h2>
+      <p>{{ 'videos.subtitle' | translate }}</p>
+    </div>
+    <div class="video-grid">
+      @for (video of videos; track video.key) {
+        <article class="video-card" [class.video-card--product]="video.key === 'product'">
+          <div class="video-thumb">
+            <iframe
+              [src]="video.source"
+              [title]="'videos.' + video.key + '.title' | translate"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <div class="video-body">
+            <span>{{ 'videos.' + video.key + '.kicker' | translate }}</span>
+            <h3>{{ 'videos.' + video.key + '.title' | translate }}</h3>
+            <p>{{ 'videos.' + video.key + '.description' | translate }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

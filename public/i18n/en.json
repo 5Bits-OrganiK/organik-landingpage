@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "product": "Product description",
+    "videos": "Videos",
+    "pricing": "Plans",
+    "starter": "Subscribe",
+    "access": "Start"
+  },
+  "home": {
+    "eyebrow": "Organic inventory management",
+    "title": "Control your inventory before it is too late",
+    "subtitle": "Expiration alerts, conservation conditions, and supply orders in one place for your organic minimarket.",
+    "demoAction": "Request access",
+    "videoAction": "Watch video",
+    "preview": {
+      "inventory": "Controlled products",
+      "alerts": "Active alerts",
+      "orders": "Pending orders",
+      "growth": "+24 this week",
+      "stock": "Stock",
+      "lots": "Lots",
+      "supply": "Orders"
+    }
+  },
+  "productInfo": {
+    "eyebrow": "What OrganiK offers",
+    "title": "One place for inventory, lots, conservation, and supply",
+    "description": "OrganiK centralizes your organic minimarket's daily operation: know which products need attention, which are close to expiring, and how every order is progressing.",
+    "highlight": {
+      "title": "Smart alerts",
+      "description": "Upcoming expirations and out-of-range conservation conditions, notified before they become losses."
+    },
+    "cards": {
+      "inventory": {
+        "title": "Centralized inventory",
+        "description": "Stock, categories, and suppliers in one view."
+      },
+      "lots": {
+        "title": "Lot control",
+        "description": "Full traceability by date and supplier."
+      },
+      "orders": {
+        "title": "Supply orders",
+        "description": "Accept or reject orders in one click."
+      },
+      "roles": {
+        "title": "Role-based access",
+        "description": "Each user sees only what belongs to their role."
+      }
+    }
+  },
+  "videos": {
+    "eyebrow": "Meet us",
+    "title": "Meet the team and discover OrganiK in action",
+    "subtitle": "Two short videos to learn who is behind the product and how it can help your daily work.",
+    "team": {
+      "kicker": "ABOUT THE TEAM",
+      "title": "Meet the people behind OrganiK",
+      "description": "The team members introduce themselves and share what motivated them to create the platform."
+    },
+    "product": {
+      "kicker": "ABOUT THE PRODUCT",
+      "title": "How OrganiK works",
+      "description": "A tour through inventory, lots, conservation, and supply in one demo."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Plans",
+    "title": "A plan for every minimarket size",
+    "subtitle": "Start with the essentials and grow into advanced conservation and supply features.",
+    "action": "Choose plan",
+    "salesAction": "Contact sales",
+    "badge": "Most chosen",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "S/ 79",
+        "period": "/month",
+        "description": "For a minimarket with simple operations",
+        "features": [
+          "Inventory and lots",
+          "Expiration alerts",
+          "1 admin user"
+        ]
+      },
+      "professional": {
+        "name": "Professional",
+        "price": "S/ 149",
+        "period": "/month",
+        "description": "For minimarkets with several suppliers",
+        "features": [
+          "Everything in Basic",
+          "Conservation monitoring",
+          "Supply orders",
+          "Up to 5 users"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "",
+        "description": "For chains with several minimarkets",
+        "features": [
+          "Everything in Professional",
+          "Multi-minimarket",
+          "Priority support"
+        ]
+      }
+    }
+  },
+  "starter": {
+    "eyebrow": "Starter",
+    "title": "Subscribe to start with OrganiK",
+    "description": "Leave your details and we will help activate the right plan for your minimarket. We can also answer questions about features, users, and support.",
+    "info": {
+      "email": "hola@organik.pe",
+      "trial": "7 free days",
+      "schedule": "Mon-Fri, 9am-6pm"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email address",
+      "store": "Minimarket name",
+      "phone": "Phone",
+      "planPlaceholder": "Select a plan",
+      "privacy": "I accept the privacy policy"
+    },
+    "action": "Subscribe",
+    "cards": {
+      "email": "Email",
+      "trial": "Trial",
+      "schedule": "Hours"
+    }
+  },
+  "footer": {
+    "copy": "2026 - Inventory management for organic minimarkets",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "support": "Support"
+  }
+}

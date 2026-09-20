@@ -1,0 +1,250 @@
+.home-section {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding: 80px 0 96px;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: .92fr 1.08fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.home-copy h1 {
+  margin-top: 20px;
+  max-width: 520px;
+  font-size: clamp(3rem, 6vw, 4.65rem);
+  line-height: 1.04;
+  color: var(--color-text);
+}
+
+.home-copy p:not(.section-pill) {
+  max-width: 440px;
+  margin-top: 22px;
+  color: var(--color-muted);
+  font-size: 1.13rem;
+  line-height: 1.7;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.home-preview {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  border: 1px solid #e4effb;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #f7fbff 0%, var(--color-blue-soft) 100%);
+  padding: 34px;
+  display: grid;
+  align-content: end;
+  gap: 18px;
+  box-shadow: 0 24px 54px rgba(8, 38, 83, .09);
+}
+
+.preview-orbit {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(14, 138, 242, .1);
+  pointer-events: none;
+}
+
+.preview-orbit--top {
+  width: 250px;
+  height: 250px;
+  top: -82px;
+  right: -44px;
+}
+
+.preview-orbit--bottom {
+  width: 190px;
+  height: 190px;
+  left: -62px;
+  bottom: 44px;
+  background: rgba(255, 122, 26, .1);
+}
+
+.preview-window {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, .78);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .7);
+  box-shadow: 0 18px 38px rgba(8, 38, 83, .08);
+  backdrop-filter: blur(14px);
+}
+
+.preview-window__bar {
+  display: flex;
+  gap: 8px;
+}
+
+.preview-window__bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #8dd9ff;
+}
+
+.preview-window__bar span:nth-child(2) {
+  background: var(--color-blue);
+}
+
+.preview-window__bar span:nth-child(3) {
+  background: var(--color-orange);
+}
+
+.preview-card,
+.preview-row div {
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .9);
+  border: 1px solid var(--color-border);
+  padding: 22px;
+  box-shadow: 0 16px 28px rgba(8, 38, 83, .06);
+}
+
+.preview-card span,
+.preview-row span {
+  display: block;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.preview-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-blue-dark);
+  font-size: 3rem;
+}
+
+.preview-card small {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--color-blue);
+  font-weight: 800;
+}
+
+.preview-chart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  align-items: end;
+  height: 122px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, .72);
+}
+
+.preview-chart span {
+  display: block;
+  border-radius: 999px 999px 8px 8px;
+  background: linear-gradient(180deg, #8dd9ff 0%, var(--color-blue) 100%);
+}
+
+.preview-chart span:nth-child(4) {
+  background: linear-gradient(180deg, #ffc25c 0%, var(--color-orange) 100%);
+}
+
+.preview-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.preview-flow span {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 42px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  color: var(--color-blue-dark);
+  font-weight: 800;
+  font-size: .86rem;
+}
+
+.preview-flow span:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 10px;
+  height: 2px;
+  background: var(--color-blue);
+}
+
+.preview-row {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.preview-row strong {
+  display: block;
+  margin-top: 6px;
+  color: var(--color-blue);
+  font-size: 1.8rem;
+}
+
+@media (max-width: 900px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-section {
+    padding: 64px 0;
+  }
+
+  .home-copy h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-actions,
+  .home-actions .btn,
+  .preview-row {
+    width: 100%;
+  }
+
+  .home-actions {
+    flex-direction: column;
+  }
+
+  .home-preview {
+    min-height: 390px;
+    padding: 22px;
+  }
+
+  .preview-window {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .preview-chart {
+    height: 96px;
+    padding: 14px;
+  }
+
+  .preview-flow,
+  .preview-row {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-flow span:not(:last-child)::after {
+    display: none;
+  }
+}

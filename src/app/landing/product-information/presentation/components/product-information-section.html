@@ -1,0 +1,28 @@
+<section id="product-information" class="section info-section">
+  <div class="container info-layout">
+    <div class="info-copy">
+      <p class="section-pill">{{ 'productInfo.eyebrow' | translate }}</p>
+      <h2>{{ 'productInfo.title' | translate }}</h2>
+      <p>{{ 'productInfo.description' | translate }}</p>
+      <div class="info-visual" aria-hidden="true">
+        <img src="/assets/images/illustrations/marketgo-process-flow.svg" alt="" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="info-feature-grid">
+      <article class="info-highlight">
+        <span aria-hidden="true"></span>
+        <h3>{{ 'productInfo.highlight.title' | translate }}</h3>
+        <p>{{ 'productInfo.highlight.description' | translate }}</p>
+      </article>
+      <div class="info-mini-grid">
+        @for (card of cards; track card) {
+          <article class="info-card">
+            <h3>{{ 'productInfo.cards.' + card + '.title' | translate }}</h3>
+            <p>{{ 'productInfo.cards.' + card + '.description' | translate }}</p>
+          </article>
+        }
+      </div>
+    </div>
+  </div>
+</section>

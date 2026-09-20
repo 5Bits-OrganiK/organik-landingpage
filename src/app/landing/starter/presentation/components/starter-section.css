@@ -1,0 +1,127 @@
+.starter-section {
+  border-top: 1px solid var(--color-border);
+  background: linear-gradient(180deg, #fff 0%, var(--color-surface-soft) 100%);
+}
+
+.starter-panel {
+  display: grid;
+  grid-template-columns: 1fr .92fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.starter-copy h2 {
+  margin-top: 18px;
+  max-width: 620px;
+  font-size: clamp(2.15rem, 4vw, 3.15rem);
+  line-height: 1.1;
+}
+
+.starter-copy > p:not(.section-pill) {
+  margin-top: 28px;
+  max-width: 560px;
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+.starter-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+  max-width: 620px;
+}
+
+.starter-cards article {
+  min-height: 104px;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(8, 38, 83, .04);
+}
+
+.starter-cards strong,
+.starter-cards span {
+  display: block;
+}
+
+.starter-cards strong {
+  color: var(--color-text);
+}
+
+.starter-cards span {
+  margin-top: 6px;
+  color: var(--color-muted);
+  font-size: .9rem;
+}
+
+.starter-form {
+  display: grid;
+  gap: 14px;
+  padding: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.starter-form input,
+.starter-form select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 15px 16px;
+  color: var(--color-text);
+  background: #fff;
+}
+
+.starter-form input:focus,
+.starter-form select:focus {
+  outline: 2px solid rgba(18, 146, 244, .18);
+  border-color: var(--color-blue);
+}
+
+.privacy-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-muted);
+  font-size: .9rem;
+}
+
+.privacy-check input {
+  width: auto;
+}
+
+.starter-form .btn {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .starter-panel,
+  .starter-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .starter-form {
+    padding: 22px;
+  }
+
+  .privacy-check {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .privacy-check input {
+    flex: 0 0 auto;
+    margin-top: 3px;
+  }
+
+  .privacy-check span {
+    line-height: 1.35;
+  }
+}

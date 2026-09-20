@@ -1,0 +1,43 @@
+<section id="starter" class="section starter-section">
+  <div class="container">
+    <div class="starter-panel">
+      <div class="starter-copy">
+        <p class="section-pill">{{ 'starter.eyebrow' | translate }}</p>
+        <h2>{{ 'starter.title' | translate }}</h2>
+        <div class="starter-cards">
+          <article>
+            <strong>{{ 'starter.cards.email' | translate }}</strong>
+            <span>{{ 'starter.info.email' | translate }}</span>
+          </article>
+          <article>
+            <strong>{{ 'starter.cards.trial' | translate }}</strong>
+            <span>{{ 'starter.info.trial' | translate }}</span>
+          </article>
+          <article>
+            <strong>{{ 'starter.cards.schedule' | translate }}</strong>
+            <span>{{ 'starter.info.schedule' | translate }}</span>
+          </article>
+        </div>
+        <p>{{ 'starter.description' | translate }}</p>
+      </div>
+
+      <form class="starter-form">
+        <input type="text" [placeholder]="'starter.fields.name' | translate" />
+        <input type="email" [placeholder]="'starter.fields.email' | translate" />
+        <input type="text" [placeholder]="'starter.fields.store' | translate" />
+        <input type="tel" [placeholder]="'starter.fields.phone' | translate" />
+        <select aria-label="Selected plan">
+          <option>{{ 'starter.fields.planPlaceholder' | translate }}</option>
+          <option>{{ 'pricing.plans.basic.name' | translate }}</option>
+          <option>{{ 'pricing.plans.professional.name' | translate }}</option>
+          <option>{{ 'pricing.plans.enterprise.name' | translate }}</option>
+        </select>
+        <label class="privacy-check">
+          <input type="checkbox" />
+          <span>{{ 'starter.fields.privacy' | translate }}</span>
+        </label>
+        <button class="btn btn--primary" type="button">{{ 'starter.action' | translate }}</button>
+      </form>
+    </div>
+  </div>
+</section>

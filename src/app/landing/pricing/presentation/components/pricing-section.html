@@ -1,0 +1,33 @@
+<section id="pricing" class="section pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-pill">{{ 'pricing.eyebrow' | translate }}</p>
+      <h2>{{ 'pricing.title' | translate }}</h2>
+      <p>{{ 'pricing.subtitle' | translate }}</p>
+    </div>
+
+    <div class="plans-grid">
+      @for (plan of plans; track plan.key) {
+        <article class="plan-card" [class.plan-card--featured]="plan.key === 'professional'">
+          @if (plan.key === 'professional') {
+            <span class="plan-badge">{{ 'pricing.badge' | translate }}</span>
+          }
+          <h3>{{ 'pricing.plans.' + plan.key + '.name' | translate }}</h3>
+          <div class="plan-price">
+            <strong>{{ 'pricing.plans.' + plan.key + '.price' | translate }}</strong>
+            <span>{{ 'pricing.plans.' + plan.key + '.period' | translate }}</span>
+          </div>
+          <p>{{ 'pricing.plans.' + plan.key + '.description' | translate }}</p>
+          <ul>
+            @for (featureIndex of plan.featureIndexes; track featureIndex) {
+              <li>{{ 'pricing.plans.' + plan.key + '.features.' + featureIndex | translate }}</li>
+            }
+          </ul>
+          <a class="btn" [class.btn--primary]="plan.key === 'professional'" [class.btn--secondary]="plan.key !== 'professional'" href="#starter">
+            {{ (plan.key === 'enterprise' ? 'pricing.salesAction' : 'pricing.action') | translate }}
+          </a>
+        </article>
+      }
+    </div>
+  </div>
+</section>

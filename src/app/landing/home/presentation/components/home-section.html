@@ -1,0 +1,43 @@
+<section id="home" class="home-section">
+  <div class="container home-layout">
+    <div class="home-copy">
+      <p class="section-pill">{{ 'home.eyebrow' | translate }}</p>
+      <h1>{{ 'home.title' | translate }}</h1>
+      <p>{{ 'home.subtitle' | translate }}</p>
+      <div class="home-actions">
+        <a class="btn btn--orange" href="#starter">{{ 'home.demoAction' | translate }}</a>
+        <a class="btn btn--secondary" href="#videos">{{ 'home.videoAction' | translate }}</a>
+      </div>
+    </div>
+
+    <div class="home-preview" aria-label="OrganiK platform preview">
+      <div class="preview-orbit preview-orbit--top" aria-hidden="true"></div>
+      <div class="preview-orbit preview-orbit--bottom" aria-hidden="true"></div>
+      <div class="preview-window">
+        <div class="preview-window__bar" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="preview-card preview-card--main">
+          <span>{{ 'home.preview.inventory' | translate }}</span>
+          <strong>128</strong>
+          <small>{{ 'home.preview.growth' | translate }}</small>
+        </div>
+        <div class="preview-chart" aria-hidden="true">
+          <span style="height: 46%"></span>
+          <span style="height: 72%"></span>
+          <span style="height: 54%"></span>
+          <span style="height: 86%"></span>
+        </div>
+        <div class="preview-flow" aria-hidden="true">
+          <span>{{ 'home.preview.stock' | translate }}</span>
+          <span>{{ 'home.preview.lots' | translate }}</span>
+          <span>{{ 'home.preview.supply' | translate }}</span>
+        </div>
+      </div>
+      <div class="preview-row">
+        <div><span>{{ 'home.preview.alerts' | translate }}</span><strong>12</strong></div>
+        <div><span>{{ 'home.preview.orders' | translate }}</span><strong>18</strong></div>
+      </div>
+    </div>
+  </div>
+</section>

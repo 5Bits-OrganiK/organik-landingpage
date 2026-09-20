@@ -1,0 +1,15 @@
+:host {
+  display: inline-flex;
+}
+
+mat-button-toggle-group {
+  overflow: hidden;
+  border-color: var(--color-border);
+  border-radius: 999px;
+  background: #fff;
+}
+
+mat-button-toggle {
+  font-weight: 800;
+  color: var(--color-blue-dark);
+}

@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "product": "Descripcion del producto",
+    "videos": "Videos",
+    "pricing": "Planes",
+    "starter": "Suscribirse",
+    "access": "Empezar"
+  },
+  "home": {
+    "eyebrow": "Gestion de inventario organico",
+    "title": "Controla tu inventario antes de que sea tarde",
+    "subtitle": "Alertas de vencimiento, condiciones de conservacion y pedidos de abastecimiento en un solo lugar para tu minimarket organico.",
+    "demoAction": "Solicitar acceso",
+    "videoAction": "Ver video",
+    "preview": {
+      "inventory": "Productos controlados",
+      "alerts": "Alertas activas",
+      "orders": "Pedidos pendientes",
+      "growth": "+24 esta semana",
+      "stock": "Stock",
+      "lots": "Lotes",
+      "supply": "Pedidos"
+    }
+  },
+  "productInfo": {
+    "eyebrow": "Que ofrece OrganiK",
+    "title": "Un solo lugar para inventario, lotes, conservacion y abastecimiento",
+    "description": "OrganiK centraliza la operacion diaria de tu minimarket organico: sabras que productos requieren atencion, cuales estan por vencer y como avanza cada pedido, sin cambiar entre planillas o sistemas distintos.",
+    "highlight": {
+      "title": "Alertas inteligentes",
+      "description": "Vencimientos proximos y condiciones de conservacion fuera de rango, notificadas antes de que se conviertan en perdida."
+    },
+    "cards": {
+      "inventory": {
+        "title": "Inventario centralizado",
+        "description": "Stock, categorias y proveedores en una sola vista."
+      },
+      "lots": {
+        "title": "Control de lotes",
+        "description": "Trazabilidad completa por fecha y proveedor."
+      },
+      "orders": {
+        "title": "Pedidos de abastecimiento",
+        "description": "Acepta o rechaza pedidos con un clic."
+      },
+      "roles": {
+        "title": "Accesos por rol",
+        "description": "Cada usuario ve solo lo que le corresponde."
+      }
+    }
+  },
+  "videos": {
+    "eyebrow": "Conocenos",
+    "title": "Conoce al equipo y descubre OrganiK en accion",
+    "subtitle": "Dos videos cortos para conocer quienes estamos detras del producto y como puede ayudarte en tu dia a dia.",
+    "team": {
+      "kicker": "ABOUT THE TEAM",
+      "title": "Conoce a las personas detras de OrganiK",
+      "description": "Los integrantes del equipo se presentan y cuentan que los motivo a crear la plataforma."
+    },
+    "product": {
+      "kicker": "ABOUT THE PRODUCT",
+      "title": "Asi funciona OrganiK",
+      "description": "Un recorrido por inventario, lotes, conservacion y abastecimiento en una sola demostracion."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Planes",
+    "title": "Un plan para cada tamano de minimarket",
+    "subtitle": "Empieza con lo esencial y crece hacia funciones avanzadas de conservacion y abastecimiento.",
+    "action": "Elegir plan",
+    "salesAction": "Contactar ventas",
+    "badge": "Mas elegido",
+    "plans": {
+      "basic": {
+        "name": "Basico",
+        "price": "S/ 79",
+        "period": "/mes",
+        "description": "Para un minimarket con operacion simple",
+        "features": [
+          "Inventario y lotes",
+          "Alertas de vencimiento",
+          "1 usuario administrador"
+        ]
+      },
+      "professional": {
+        "name": "Profesional",
+        "price": "S/ 149",
+        "period": "/mes",
+        "description": "Para minimarkets con varios proveedores",
+        "features": [
+          "Todo lo del plan Basico",
+          "Monitoreo de conservacion",
+          "Pedidos de abastecimiento",
+          "Hasta 5 usuarios"
+        ]
+      },
+      "enterprise": {
+        "name": "Empresarial",
+        "price": "A medida",
+        "period": "",
+        "description": "Para cadenas de varios minimarkets",
+        "features": [
+          "Todo lo del plan Profesional",
+          "Multi-minimarket",
+          "Soporte prioritario"
+        ]
+      }
+    }
+  },
+  "starter": {
+    "eyebrow": "Starter",
+    "title": "Suscribete para empezar con OrganiK",
+    "description": "Dejanos tus datos y te ayudaremos a activar el plan ideal para tu minimarket. Tambien podemos resolver dudas sobre funcionalidades, usuarios y soporte.",
+    "info": {
+      "email": "hola@organik.pe",
+      "trial": "7 dias gratis",
+      "schedule": "Lun-Vie, 9am-6pm"
+    },
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Correo electronico",
+      "store": "Nombre del minimarket",
+      "phone": "Telefono",
+      "planPlaceholder": "Selecciona un plan",
+      "privacy": "Acepto la politica de privacidad"
+    },
+    "action": "Suscribirme",
+    "cards": {
+      "email": "Correo",
+      "trial": "Prueba",
+      "schedule": "Horario"
+    }
+  },
+  "footer": {
+    "copy": "2026 - Gestion de inventario para minimarkets organicos",
+    "terms": "Terminos",
+    "privacy": "Privacidad",
+    "support": "Soporte"
+  }
+}
