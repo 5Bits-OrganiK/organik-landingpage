@@ -11,6 +11,7 @@
           <div class="video-thumb">
             <iframe
               [src]="video.source"
+              [srcdoc]="video.preview"
               [title]="'videos.' + video.key + '.title' | translate"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen

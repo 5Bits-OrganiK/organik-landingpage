@@ -20,6 +20,7 @@
 
 .video-thumb {
   height: 225px;
+  position: relative;
   background: var(--color-blue-dark);
 }
 
@@ -32,6 +33,7 @@
   height: 100%;
   border: 0;
   display: block;
+  background: var(--color-blue-dark);
 }
 
 .video-body {
