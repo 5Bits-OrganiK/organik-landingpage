@@ -21,7 +21,7 @@ export class VideoSection {
     this.videos = [
       {
         key: 'team',
-        source: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/ru6mmukL_6A?list=PLFAx-Rg5kP2blP7lk7utr4R6_VeMTS49d'),
+        source: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/2vlASNiEDNk'),
       },
       {
         key: 'product',
