@@ -306,7 +306,7 @@ const buildVideoPreview = (videoId, title) => `
   </a>`;
 
 const setLanguage = (language) => {
-  const dictionary = translations[language] ?? translations.es;
+  const dictionary = translations[language] ?? translations.en;
   document.documentElement.lang = language;
   localStorage.setItem("organik-language", language);
 
@@ -349,4 +349,4 @@ document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
 });
 
-setLanguage(localStorage.getItem("organik-language") || "es");
+setLanguage(localStorage.getItem("organik-language") || "en");
