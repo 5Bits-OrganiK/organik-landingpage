@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="OrganiK centraliza inventario, lotes, conservacion y abastecimiento para minimarkets organicos."
+    />
+    <title>OrganiK | Gestion de inventario organico</title>
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Primary navigation">
+        <a class="brand" href="#home">
+          <img src="public/assets/images/brand/logo-organik.png" alt="OrganiK logo" />
+          <span>OrganiK</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-panel">
+          <a href="#product-information" data-i18n="nav.product"></a>
+          <a href="#videos" data-i18n="nav.videos"></a>
+          <a href="#pricing" data-i18n="nav.pricing"></a>
+          <a href="#starter" data-i18n="nav.starter"></a>
+          <div class="language-switcher" aria-label="Preferred language">
+            <button type="button" data-language="es">ES</button>
+            <button type="button" data-language="en">EN</button>
+          </div>
+          <a class="access-button" href="#starter" data-i18n="nav.access"></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="home-section">
+        <div class="container home-layout">
+          <div class="home-copy">
+            <p class="section-pill" data-i18n="home.eyebrow"></p>
+            <h1 data-i18n="home.title"></h1>
+            <p data-i18n="home.subtitle"></p>
+            <div class="home-actions">
+              <a class="btn btn--orange" href="#starter" data-i18n="home.demoAction"></a>
+              <a class="btn btn--secondary" href="#videos" data-i18n="home.videoAction"></a>
+            </div>
+          </div>
+
+          <div class="home-preview" aria-label="OrganiK platform preview">
+            <div class="preview-orbit preview-orbit--top" aria-hidden="true"></div>
+            <div class="preview-orbit preview-orbit--bottom" aria-hidden="true"></div>
+            <div class="preview-window">
+              <div class="preview-window__bar" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="preview-card preview-card--main">
+                <span data-i18n="home.preview.inventory"></span>
+                <strong>128</strong>
+                <small data-i18n="home.preview.growth"></small>
+              </div>
+              <div class="preview-chart" aria-hidden="true">
+                <span style="height: 46%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 86%"></span>
+              </div>
+              <div class="preview-flow" aria-hidden="true">
+                <span data-i18n="home.preview.stock"></span>
+                <span data-i18n="home.preview.lots"></span>
+                <span data-i18n="home.preview.supply"></span>
+              </div>
+            </div>
+            <div class="preview-row">
+              <div><span data-i18n="home.preview.alerts"></span><strong>12</strong></div>
+              <div><span data-i18n="home.preview.orders"></span><strong>18</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="product-information" class="section info-section">
+        <div class="container info-layout">
+          <div class="info-copy">
+            <p class="section-pill" data-i18n="productInfo.eyebrow"></p>
+            <h2 data-i18n="productInfo.title"></h2>
+            <p data-i18n="productInfo.description"></p>
+            <div class="info-visual" aria-hidden="true">
+              <img src="public/assets/images/illustrations/organik-process-flow.svg" alt="" loading="lazy" />
+            </div>
+          </div>
+
+          <div class="info-feature-grid">
+            <article class="info-highlight">
+              <span aria-hidden="true"></span>
+              <h3 data-i18n="productInfo.highlight.title"></h3>
+              <p data-i18n="productInfo.highlight.description"></p>
+            </article>
+            <div class="info-mini-grid">
+              <article class="info-card">
+                <h3 data-i18n="productInfo.cards.inventory.title"></h3>
+                <p data-i18n="productInfo.cards.inventory.description"></p>
+              </article>
+              <article class="info-card">
+                <h3 data-i18n="productInfo.cards.lots.title"></h3>
+                <p data-i18n="productInfo.cards.lots.description"></p>
+              </article>
+              <article class="info-card">
+                <h3 data-i18n="productInfo.cards.orders.title"></h3>
+                <p data-i18n="productInfo.cards.orders.description"></p>
+              </article>
+              <article class="info-card">
+                <h3 data-i18n="productInfo.cards.roles.title"></h3>
+                <p data-i18n="productInfo.cards.roles.description"></p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="section video-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-pill" data-i18n="videos.eyebrow"></p>
+            <h2 data-i18n="videos.title"></h2>
+            <p data-i18n="videos.subtitle"></p>
+          </div>
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-thumb">
+                <iframe
+                  data-video-id="2vlASNiEDNk"
+                  title="About the team"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+              <div class="video-body">
+                <span data-i18n="videos.team.kicker"></span>
+                <h3 data-i18n="videos.team.title"></h3>
+                <p data-i18n="videos.team.description"></p>
+              </div>
+            </article>
+            <article class="video-card video-card--product">
+              <div class="video-thumb">
+                <iframe
+                  data-video-id="Gu3jqJepwaI"
+                  title="About the product"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+              <div class="video-body">
+                <span data-i18n="videos.product.kicker"></span>
+                <h3 data-i18n="videos.product.title"></h3>
+                <p data-i18n="videos.product.description"></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-pill" data-i18n="pricing.eyebrow"></p>
+            <h2 data-i18n="pricing.title"></h2>
+            <p data-i18n="pricing.subtitle"></p>
+          </div>
+
+          <div class="plans-grid">
+            <article class="plan-card">
+              <h3 data-i18n="pricing.plans.basic.name"></h3>
+              <div class="plan-price">
+                <strong data-i18n="pricing.plans.basic.price"></strong>
+                <span data-i18n="pricing.plans.basic.period"></span>
+              </div>
+              <p data-i18n="pricing.plans.basic.description"></p>
+              <ul>
+                <li data-i18n="pricing.plans.basic.features.0"></li>
+                <li data-i18n="pricing.plans.basic.features.1"></li>
+                <li data-i18n="pricing.plans.basic.features.2"></li>
+              </ul>
+              <a class="btn btn--secondary" href="#starter" data-i18n="pricing.action"></a>
+            </article>
+
+            <article class="plan-card plan-card--featured">
+              <span class="plan-badge" data-i18n="pricing.badge"></span>
+              <h3 data-i18n="pricing.plans.professional.name"></h3>
+              <div class="plan-price">
+                <strong data-i18n="pricing.plans.professional.price"></strong>
+                <span data-i18n="pricing.plans.professional.period"></span>
+              </div>
+              <p data-i18n="pricing.plans.professional.description"></p>
+              <ul>
+                <li data-i18n="pricing.plans.professional.features.0"></li>
+                <li data-i18n="pricing.plans.professional.features.1"></li>
+                <li data-i18n="pricing.plans.professional.features.2"></li>
+                <li data-i18n="pricing.plans.professional.features.3"></li>
+              </ul>
+              <a class="btn btn--primary" href="#starter" data-i18n="pricing.action"></a>
+            </article>
+
+            <article class="plan-card">
+              <h3 data-i18n="pricing.plans.enterprise.name"></h3>
+              <div class="plan-price">
+                <strong data-i18n="pricing.plans.enterprise.price"></strong>
+                <span data-i18n="pricing.plans.enterprise.period"></span>
+              </div>
+              <p data-i18n="pricing.plans.enterprise.description"></p>
+              <ul>
+                <li data-i18n="pricing.plans.enterprise.features.0"></li>
+                <li data-i18n="pricing.plans.enterprise.features.1"></li>
+                <li data-i18n="pricing.plans.enterprise.features.2"></li>
+              </ul>
+              <a class="btn btn--secondary" href="#starter" data-i18n="pricing.salesAction"></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="starter" class="section starter-section">
+        <div class="container">
+          <div class="starter-panel">
+            <div class="starter-copy">
+              <p class="section-pill" data-i18n="starter.eyebrow"></p>
+              <h2 data-i18n="starter.title"></h2>
+              <div class="starter-cards">
+                <article>
+                  <strong data-i18n="starter.cards.email"></strong>
+                  <span data-i18n="starter.info.email"></span>
+                </article>
+                <article>
+                  <strong data-i18n="starter.cards.trial"></strong>
+                  <span data-i18n="starter.info.trial"></span>
+                </article>
+                <article>
+                  <strong data-i18n="starter.cards.schedule"></strong>
+                  <span data-i18n="starter.info.schedule"></span>
+                </article>
+              </div>
+              <p data-i18n="starter.description"></p>
+            </div>
+
+            <form class="starter-form">
+              <input type="text" data-i18n-placeholder="starter.fields.name" />
+              <input type="email" data-i18n-placeholder="starter.fields.email" />
+              <input type="text" data-i18n-placeholder="starter.fields.store" />
+              <input type="tel" data-i18n-placeholder="starter.fields.phone" />
+              <select aria-label="Selected plan">
+                <option data-i18n="starter.fields.planPlaceholder"></option>
+                <option data-i18n="pricing.plans.basic.name"></option>
+                <option data-i18n="pricing.plans.professional.name"></option>
+                <option data-i18n="pricing.plans.enterprise.name"></option>
+              </select>
+              <label class="privacy-check">
+                <input type="checkbox" />
+                <span data-i18n="starter.fields.privacy"></span>
+              </label>
+              <button class="btn btn--primary" type="button" data-i18n="starter.action"></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="#home">
+          <img src="public/assets/images/brand/logo-organik.png" alt="OrganiK logo" />
+          <span>OrganiK</span>
+        </a>
+        <small data-i18n="footer.copy"></small>
+        <nav aria-label="Footer navigation">
+          <a href="#pricing" data-i18n="footer.terms"></a>
+          <a href="#starter" data-i18n="footer.privacy"></a>
+          <a href="#starter" data-i18n="footer.support"></a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
