@@ -2,6 +2,8 @@ const translations = {
   es: {
     nav: {
       product: "Descripcion del producto",
+      business: "Modelo de negocio",
+      screenshots: "Pantallas",
       videos: "Videos",
       pricing: "Planes",
       starter: "Suscribirse",
@@ -51,6 +53,48 @@ const translations = {
           title: "Accesos por rol",
           description: "Cada usuario ve solo lo que le corresponde.",
         },
+      },
+    },
+    business: {
+      eyebrow: "Modelo de negocio",
+      title: "OrganiK convierte el control operativo en un servicio mensual accesible",
+      subtitle:
+        "La plataforma se orienta a minimarkets organicos que necesitan reducir perdidas por vencimiento, ordenar proveedores y tomar mejores decisiones de abastecimiento.",
+      model: {
+        kicker: "SaaS B2B",
+        title: "Suscripcion mensual por tienda y por nivel de funciones",
+        description:
+          "OrganiK monetiza mediante planes mensuales para negocios minoristas. Cada plan incluye inventario, alertas, pedidos y soporte, con opciones de crecimiento para cadenas de tiendas.",
+      },
+      market: {
+        kicker: "Clientes",
+        title: "Minimarkets organicos y tiendas saludables",
+        description:
+          "El cliente objetivo administra productos perecibles, trabaja con varios proveedores y requiere trazabilidad sin depender de hojas de calculo dispersas.",
+      },
+      value: {
+        kicker: "Propuesta de valor",
+        title: "Menos merma, mas control y reposicion oportuna",
+        description:
+          "La app alerta productos criticos, muestra stock disponible y ayuda a decidir cuando reabastecer antes de perder ventas o alimentos.",
+      },
+    },
+    screenshots: {
+      eyebrow: "Screenshots de la app",
+      title: "Pantallas clave de la experiencia OrganiK",
+      subtitle:
+        "Estas vistas resumen como el usuario controla inventario, detecta alertas y gestiona abastecimiento desde una misma plataforma.",
+      inventory: {
+        title: "Inventario y lotes",
+        description: "Vista de productos, stock disponible, proveedor y fecha de vencimiento para tomar accion rapidamente.",
+      },
+      alerts: {
+        title: "Alertas de conservacion",
+        description: "Notificaciones visuales para vencimientos proximos o condiciones fuera de rango.",
+      },
+      orders: {
+        title: "Pedidos y abastecimiento",
+        description: "Seguimiento de pedidos pendientes, aprobados y rechazados para mantener continuidad operativa.",
       },
     },
     videos: {
@@ -115,6 +159,8 @@ const translations = {
         "Dejanos tus datos y te ayudaremos a activar el plan ideal para tu minimarket. Tambien podemos resolver dudas sobre funcionalidades, usuarios y soporte.",
       info: {
         email: "hola@organik.pe",
+        phone: "+51 987 654 321",
+        social: "@organik.app",
         trial: "7 dias gratis",
         schedule: "Lun-Vie, 9am-6pm",
       },
@@ -129,20 +175,27 @@ const translations = {
       action: "Suscribirme",
       cards: {
         email: "Correo",
+        phone: "Telefono",
+        social: "Redes",
         trial: "Prueba",
         schedule: "Horario",
       },
     },
     footer: {
       copy: "2026 - Gestion de inventario para minimarkets organicos",
+      contact: "Contacto",
+      social: "Redes sociales",
       terms: "Terminos",
       privacy: "Privacidad",
       support: "Soporte",
+      repository: "Repositorio",
     },
   },
   en: {
     nav: {
       product: "Product description",
+      business: "Business model",
+      screenshots: "Screenshots",
       videos: "Videos",
       pricing: "Plans",
       starter: "Subscribe",
@@ -192,6 +245,48 @@ const translations = {
           title: "Role-based access",
           description: "Each user sees only what belongs to their role.",
         },
+      },
+    },
+    business: {
+      eyebrow: "Business model",
+      title: "OrganiK turns operational control into an affordable monthly service",
+      subtitle:
+        "The platform targets organic minimarkets that need to reduce expiration losses, organize suppliers, and make better supply decisions.",
+      model: {
+        kicker: "B2B SaaS",
+        title: "Monthly subscription by store and feature level",
+        description:
+          "OrganiK monetizes through monthly plans for retail businesses. Each plan includes inventory, alerts, orders, and support, with growth options for multi-store chains.",
+      },
+      market: {
+        kicker: "Customers",
+        title: "Organic minimarkets and healthy grocery stores",
+        description:
+          "The target customer manages perishable products, works with several suppliers, and needs traceability without scattered spreadsheets.",
+      },
+      value: {
+        kicker: "Value proposition",
+        title: "Less waste, more control, and timely replenishment",
+        description:
+          "The app flags critical products, shows available stock, and helps decide when to replenish before losing sales or food.",
+      },
+    },
+    screenshots: {
+      eyebrow: "App screenshots",
+      title: "Key screens from the OrganiK experience",
+      subtitle:
+        "These views summarize how users control inventory, detect alerts, and manage supply from the same platform.",
+      inventory: {
+        title: "Inventory and lots",
+        description: "Product, stock, supplier, and expiration views help users take action quickly.",
+      },
+      alerts: {
+        title: "Conservation alerts",
+        description: "Visual notifications for upcoming expirations or out-of-range storage conditions.",
+      },
+      orders: {
+        title: "Orders and supply",
+        description: "Tracking for pending, approved, and rejected orders keeps operations moving.",
       },
     },
     videos: {
@@ -247,6 +342,8 @@ const translations = {
         "Leave your details and we will help activate the right plan for your minimarket. We can also answer questions about features, users, and support.",
       info: {
         email: "hola@organik.pe",
+        phone: "+51 987 654 321",
+        social: "@organik.app",
         trial: "7 free days",
         schedule: "Mon-Fri, 9am-6pm",
       },
@@ -261,15 +358,20 @@ const translations = {
       action: "Subscribe",
       cards: {
         email: "Email",
+        phone: "Phone",
+        social: "Social",
         trial: "Trial",
         schedule: "Hours",
       },
     },
     footer: {
       copy: "2026 - Inventory management for organic minimarkets",
+      contact: "Contact",
+      social: "Social media",
       terms: "Terms",
       privacy: "Privacy",
       support: "Support",
+      repository: "Repository",
     },
   },
 };

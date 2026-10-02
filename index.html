@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="OrganiK centraliza inventario, lotes, conservacion y abastecimiento para minimarkets organicos."
+      content="OrganiK centralizes inventory, lots, conservation alerts and supply orders for organic minimarkets."
     />
-    <title>OrganiK | Gestion de inventario organico</title>
+    <title>OrganiK | Organic inventory management</title>
     <link rel="icon" type="image/png" href="public/assets/images/brand/logo-organik.png?v=organik" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,6 +25,8 @@
 
         <div class="nav-panel">
           <a href="#product-information" data-i18n="nav.product"></a>
+          <a href="#business-model" data-i18n="nav.business"></a>
+          <a href="#screenshots" data-i18n="nav.screenshots"></a>
           <a href="#videos" data-i18n="nav.videos"></a>
           <a href="#pricing" data-i18n="nav.pricing"></a>
           <a href="#starter" data-i18n="nav.starter"></a>
@@ -117,6 +119,72 @@
                 <p data-i18n="productInfo.cards.roles.description"></p>
               </article>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="business-model" class="section business-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-pill" data-i18n="business.eyebrow"></p>
+            <h2 data-i18n="business.title"></h2>
+            <p data-i18n="business.subtitle"></p>
+          </div>
+          <div class="business-grid">
+            <article class="business-card business-card--wide">
+              <span data-i18n="business.model.kicker"></span>
+              <h3 data-i18n="business.model.title"></h3>
+              <p data-i18n="business.model.description"></p>
+            </article>
+            <article class="business-card">
+              <span data-i18n="business.market.kicker"></span>
+              <h3 data-i18n="business.market.title"></h3>
+              <p data-i18n="business.market.description"></p>
+            </article>
+            <article class="business-card">
+              <span data-i18n="business.value.kicker"></span>
+              <h3 data-i18n="business.value.title"></h3>
+              <p data-i18n="business.value.description"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="screenshots" class="section screenshots-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-pill" data-i18n="screenshots.eyebrow"></p>
+            <h2 data-i18n="screenshots.title"></h2>
+            <p data-i18n="screenshots.subtitle"></p>
+          </div>
+          <div class="screenshot-grid">
+            <article class="screenshot-card">
+              <div class="screen-frame screen-frame--inventory" aria-hidden="true">
+                <div class="screen-topline"></div>
+                <div class="screen-row"><span></span><strong></strong></div>
+                <div class="screen-row"><span></span><strong></strong></div>
+                <div class="screen-row"><span></span><strong></strong></div>
+              </div>
+              <h3 data-i18n="screenshots.inventory.title"></h3>
+              <p data-i18n="screenshots.inventory.description"></p>
+            </article>
+            <article class="screenshot-card">
+              <div class="screen-frame screen-frame--alerts" aria-hidden="true">
+                <div class="screen-alert"></div>
+                <div class="screen-alert"></div>
+                <div class="screen-alert screen-alert--safe"></div>
+              </div>
+              <h3 data-i18n="screenshots.alerts.title"></h3>
+              <p data-i18n="screenshots.alerts.description"></p>
+            </article>
+            <article class="screenshot-card">
+              <div class="screen-frame screen-frame--orders" aria-hidden="true">
+                <div class="screen-chart"><span></span><span></span><span></span><span></span></div>
+                <div class="screen-actions"><span></span><span></span></div>
+              </div>
+              <h3 data-i18n="screenshots.orders.title"></h3>
+              <p data-i18n="screenshots.orders.description"></p>
+            </article>
           </div>
         </div>
       </section>
@@ -238,12 +306,12 @@
                   <span data-i18n="starter.info.email"></span>
                 </article>
                 <article>
-                  <strong data-i18n="starter.cards.trial"></strong>
-                  <span data-i18n="starter.info.trial"></span>
+                  <strong data-i18n="starter.cards.phone"></strong>
+                  <span data-i18n="starter.info.phone"></span>
                 </article>
                 <article>
-                  <strong data-i18n="starter.cards.schedule"></strong>
-                  <span data-i18n="starter.info.schedule"></span>
+                  <strong data-i18n="starter.cards.social"></strong>
+                  <span data-i18n="starter.info.social"></span>
                 </article>
               </div>
               <p data-i18n="starter.description"></p>
@@ -273,15 +341,49 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <a class="footer-brand" href="#home">
-          <img src="public/assets/images/brand/logo-organik.png" alt="OrganiK logo" />
-          <span>OrganiK</span>
-        </a>
-        <small data-i18n="footer.copy"></small>
-        <nav aria-label="Footer navigation">
-          <a href="#pricing" data-i18n="footer.terms"></a>
-          <a href="#starter" data-i18n="footer.privacy"></a>
-          <a href="#starter" data-i18n="footer.support"></a>
+        <div class="footer-summary">
+          <a class="footer-brand" href="#home">
+            <img src="public/assets/images/brand/logo-organik.png" alt="OrganiK logo" />
+            <span>OrganiK</span>
+          </a>
+          <small data-i18n="footer.copy"></small>
+          <a
+            class="footer-repository"
+            href="https://github.com/5Bits-OrganiK/organik-landingpage"
+            target="_blank"
+            rel="noopener"
+            data-i18n="footer.repository"
+          ></a>
+        </div>
+
+        <address class="footer-contact" aria-label="Contact information">
+          <strong data-i18n="footer.contact"></strong>
+          <a href="mailto:hola@organik.pe">hola@organik.pe</a>
+          <a href="https://wa.me/51987654321" target="_blank" rel="noopener">WhatsApp +51 987 654 321</a>
+        </address>
+
+        <nav class="footer-social" aria-label="Social media accounts">
+          <strong data-i18n="footer.social"></strong>
+          <div>
+            <a href="https://www.linkedin.com/company/organik-app" target="_blank" rel="noopener" aria-label="OrganiK on LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.94 8.98H3.86v10.38h3.08V8.98ZM5.4 4.64a1.78 1.78 0 1 0 0 3.56 1.78 1.78 0 0 0 0-3.56Zm13.74 8.78c0-3.12-1.66-4.58-3.88-4.58a3.35 3.35 0 0 0-3.02 1.66h-.04V8.98H9.25v10.38h3.08v-5.14c0-1.35.26-2.66 1.93-2.66 1.65 0 1.67 1.55 1.67 2.75v5.05h3.08l.13-5.94Z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://x.com/organik_app" target="_blank" rel="noopener" aria-label="OrganiK on X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14.1 10.64 21.56 2h-1.77l-6.48 7.5L8.14 2H2.18l7.82 11.35L2.18 22h1.77l6.84-7.93L16.25 22h5.96l-8.11-11.36Zm-2.42 2.8-.8-1.13L4.58 3.33h2.71l5.09 7.27.79 1.13 6.62 9.45h-2.71l-5.4-7.74Z" />
+              </svg>
+              X
+            </a>
+            <a href="https://www.facebook.com/organik.app" target="_blank" rel="noopener" aria-label="OrganiK on Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14.5 8.1V6.75c0-.64.43-.79.73-.79h1.86V3.1L14.53 3c-2.84 0-3.48 2.13-3.48 3.49V8.1H8.82v3.22h2.23V21h3.45v-9.68h2.33l.31-3.22H14.5Z" />
+              </svg>
+              Facebook
+            </a>
+          </div>
         </nav>
       </div>
     </footer>
