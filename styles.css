@@ -233,7 +233,7 @@ a {
 .home-section {
   display: flex;
   align-items: flex-start;
-  padding: 96px 0 96px;
+  padding: 48px 0 84px;
 }
 
 .home-layout {
@@ -1037,7 +1037,7 @@ a {
   }
 
   .home-section {
-    padding: 54px 0 64px;
+    padding: 38px 0 64px;
   }
 
   .home-copy h1 {
