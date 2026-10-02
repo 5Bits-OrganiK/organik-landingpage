@@ -231,10 +231,9 @@ a {
 }
 
 .home-section {
-  min-height: calc(100vh - var(--header-height));
   display: flex;
-  align-items: center;
-  padding: 80px 0 96px;
+  align-items: flex-start;
+  padding: 96px 0 96px;
 }
 
 .home-layout {
@@ -1038,7 +1037,7 @@ a {
   }
 
   .home-section {
-    padding: 64px 0;
+    padding: 54px 0 64px;
   }
 
   .home-copy h1 {
