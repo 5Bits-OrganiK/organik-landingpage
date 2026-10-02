@@ -433,15 +433,60 @@ const setLanguage = (language) => {
 const navToggle = document.querySelector(".nav-toggle");
 const navPanel = document.querySelector(".nav-panel");
 
+const closeNavigation = () => {
+  navPanel?.classList.remove("nav-panel--open");
+  navToggle?.setAttribute("aria-expanded", "false");
+};
+
+const getHeaderHeight = () => document.querySelector(".site-header")?.offsetHeight ?? 0;
+
+const getSectionFocusElement = (target) =>
+  target.querySelector(".section-header, .info-layout, .starter-panel, .home-layout") ?? target;
+
+const scrollToHash = (hash, shouldUpdateHistory = true) => {
+  if (!hash || hash === "#") {
+    return false;
+  }
+
+  const target = document.getElementById(hash.slice(1));
+
+  if (!target) {
+    return false;
+  }
+
+  const focusElement = getSectionFocusElement(target);
+  const extraOffset = target.id === "home" ? 0 : 34;
+  const top =
+    target.id === "home"
+      ? 0
+      : focusElement.getBoundingClientRect().top + window.scrollY - getHeaderHeight() - extraOffset;
+
+  window.scrollTo({
+    top: Math.max(0, top),
+    behavior: "smooth",
+  });
+
+  if (shouldUpdateHistory && window.location.hash !== hash) {
+    history.pushState(null, "", hash);
+  }
+
+  return true;
+};
+
 navToggle?.addEventListener("click", () => {
   const isOpen = navPanel.classList.toggle("nav-panel--open");
   navToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
-document.querySelectorAll(".nav-panel a, .brand").forEach((link) => {
-  link.addEventListener("click", () => {
-    navPanel.classList.remove("nav-panel--open");
-    navToggle?.setAttribute("aria-expanded", "false");
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const hash = link.getAttribute("href");
+
+    if (scrollToHash(hash)) {
+      event.preventDefault();
+    }
+
+    closeNavigation();
   });
 });
 
@@ -450,3 +495,11 @@ document.querySelectorAll("[data-language]").forEach((button) => {
 });
 
 setLanguage(localStorage.getItem("organik-language") || "en");
+
+if (window.location.hash) {
+  window.setTimeout(() => scrollToHash(window.location.hash, false), 80);
+}
+
+window.addEventListener("popstate", () => {
+  scrollToHash(window.location.hash, false);
+});
