@@ -1,10 +1,12 @@
 {
   "nav": {
-    "product": "Descripcion del producto",
-    "videos": "Videos",
+    "product": "Producto",
+    "business": "Beneficios",
+    "screenshots": "Plataforma",
+    "videos": "Como funciona",
     "pricing": "Planes",
-    "starter": "Suscribirse",
-    "access": "Empezar"
+    "starter": "Empezar",
+    "access": "Iniciar sesion"
   },
   "home": {
     "eyebrow": "Gestion de inventario organico",
@@ -47,6 +49,40 @@
         "title": "Accesos por rol",
         "description": "Cada usuario ve solo lo que le corresponde."
       }
+    }
+  },
+  "business": {
+    "eyebrow": "Beneficios",
+    "title": "Todo el control de tu minimarket en un solo lugar",
+    "subtitle": "Gestiona inventario, vencimientos, proveedores y abastecimiento desde una sola plataforma.",
+    "model": {
+      "title": "Un plan que crece contigo",
+      "description": "Elige el plan que mejor se adapte a tu minimarket y accede a inventario, alertas, pedidos y soporte desde una sola plataforma."
+    },
+    "market": {
+      "title": "Pensado para minimarkets organicos",
+      "description": "Centraliza productos, proveedores, lotes y reposicion sin depender de hojas de calculo ni conversaciones dispersas."
+    },
+    "value": {
+      "title": "Menos perdidas, mas control",
+      "description": "Detecta productos proximos a vencer, identifica stock bajo y toma mejores decisiones de abastecimiento con informacion clara y actualizada."
+    }
+  },
+  "screenshots": {
+    "eyebrow": "Conoce la plataforma",
+    "title": "Todo lo que necesitas para gestionar mejor tu operacion",
+    "subtitle": "Controla inventario, detecta riesgos y coordina el abastecimiento desde un solo lugar, con informacion clara para actuar a tiempo.",
+    "inventory": {
+      "title": "Encuentra lo importante en segundos",
+      "description": "Visualiza stock, lotes y vencimientos sin revisar hojas de calculo ni registros dispersos."
+    },
+    "alerts": {
+      "title": "Actua antes de perder productos",
+      "description": "Detecta vencimientos y condiciones de conservacion riesgosas antes de que se conviertan en perdidas."
+    },
+    "orders": {
+      "title": "Repon a tiempo, sin perder el control",
+      "description": "Coordina pedidos con tus proveedores, revisa cantidades y decide que entra a tu inventario."
     }
   },
   "videos": {
@@ -109,11 +145,14 @@
     }
   },
   "starter": {
-    "eyebrow": "Starter",
-    "title": "Suscribete para empezar con OrganiK",
-    "description": "Dejanos tus datos y te ayudaremos a activar el plan ideal para tu minimarket. Tambien podemos resolver dudas sobre funcionalidades, usuarios y soporte.",
+    "eyebrow": "Empieza hoy",
+    "title": "Da el primer paso para gestionar mejor tu minimarket",
+    "description": "Dejanos tus datos y te ayudaremos a elegir el plan que mejor se adapte a tu operacion.",
+    "guidance": "Tambien podemos orientarte sobre funcionalidades, usuarios, soporte y proceso de activacion.",
     "info": {
-      "email": "hola@organik.pe",
+      "email": "suscripciones@organik.com",
+      "phone": "+51 987 654 321",
+      "social": "@organik.app",
       "trial": "7 dias gratis",
       "schedule": "Lun-Vie, 9am-6pm"
     },
@@ -125,17 +164,22 @@
       "planPlaceholder": "Selecciona un plan",
       "privacy": "Acepto la politica de privacidad"
     },
-    "action": "Suscribirme",
+    "action": "Quiero empezar",
     "cards": {
       "email": "Correo",
+      "phone": "Telefono",
+      "social": "Redes",
       "trial": "Prueba",
       "schedule": "Horario"
     }
   },
   "footer": {
-    "copy": "2026 - Gestion de inventario para minimarkets organicos",
+    "copy": "Gestion inteligente de inventario, conservacion y abastecimiento para minimarkets.",
+    "contact": "Contacto",
+    "social": "Redes sociales",
     "terms": "Terminos",
     "privacy": "Privacidad",
-    "support": "Soporte"
+    "support": "Soporte",
+    "repository": "Repositorio"
   }
 }

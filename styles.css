@@ -881,6 +881,10 @@ a {
   line-height: 1.75;
 }
 
+.starter-copy .starter-note {
+  margin-top: 10px;
+}
+
 .starter-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
